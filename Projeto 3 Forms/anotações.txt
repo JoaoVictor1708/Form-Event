@@ -1,0 +1,3 @@
+*futuramente mudar para as caixas invalidas só ficarem vermelhas depois do botão 'submit' ser pressionado
+
+*no segundo fieldset, dependendo do valor do checkbox, remover o input sobre senha de acesso

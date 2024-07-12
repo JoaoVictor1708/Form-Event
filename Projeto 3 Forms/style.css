@@ -1,0 +1,206 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(214, 214, 214);
+}
+
+body, input, textarea{
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before{
+    content: '' ;
+    width: 100%;
+    height: 370px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background-color: black;
+}
+
+#content{
+    width: 736px;
+    margin: auto;
+    border: solid 1px rgba(0, 0, 0, 0.452);
+    border-radius: 16px;
+    margin-bottom: 100px;
+}
+
+header{
+    margin-top: 85px;
+    width: 319px;
+}
+
+header h1{
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+}
+
+header p{
+    font-size: 16px;
+    color: #42D3FF;
+    line-height: 26px;
+}
+
+#my-form h2{
+    font-family:'Archivo', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    border-bottom: #e6e6f0 2px solid;
+    border-radius: 2px;
+    padding-bottom: 20px;
+}
+
+#my-form{
+    width: 100%;
+    background-color: white;
+    margin-top: 42px;
+    height: 1430px;
+    border-radius: 16px 16px 0 0;
+    padding: 64px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#section_forms, #section_privacy{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#box_hour_date{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.class_input , textarea, select, #checkbox, .class_time, #event_date{
+    width: 608px;
+    height: 56px;
+    border: #e6e6f0 1px solid;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    padding: 15px 24px;
+
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+textarea{
+    height: 168px;
+    resize: none;
+}
+
+select{
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+}
+
+
+#box_checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+}
+
+#checkbox{
+    width: 24px;
+    position: absolute;
+    opacity: 0;
+}
+
+#box_checkbox label{
+    display: flex;
+    gap: 16px;
+    outline:black
+}
+
+#box_checkbox label::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: #e6e6f0 1px solid;
+    border-radius: 8px;
+    display: block;
+}
+
+#box_checkbox input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6016_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6016_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+#box_checkbox input:focus +label::before{
+    outline: 2px solid black;
+}
+
+.class_time{
+    width: 128px;
+    height: 66px;
+}
+
+#event_date{
+    width: 312px;
+    height: 66px;
+}
+
+span{
+    color: rgba(99 99 99 / 92%);
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#submit_area{
+    width: 100%;
+    height: 156px;
+    background-color: #c5c5c5;
+    border-radius: 0 0 16px 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.192);
+
+    display: flex;
+}
+
+#submit_button{
+    width: 608px;
+    height: 56px;
+    margin: auto;
+    border-radius: 16px;
+    border: none;
+    background-color: #04D361;
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: 0.3s;
+}
+
+#submit_button:hover , #submit_button:focus{
+    background-color: #008f40;
+    
+    border: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+input:invalid{
+    border: 1px solid red;
+}
